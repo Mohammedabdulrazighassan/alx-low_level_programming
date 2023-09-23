@@ -46,7 +46,7 @@ void printhexes(char *b, int start, int end)
 void printASCII(char *b, int start, int end)
 {
 	int ch, i = 0;
-	
+
 	while (i < end)
 	{
 		ch = *(b + i + start);
@@ -73,10 +73,10 @@ void print_buffer(char *b, int size)
 		{
 			end = (size - start < 10) ? size - start : 10;
 			printf("%08x: ", start);
-			printHexes(b, start, end);
+			printhexes(b, start, end);
 			printASCII(b, start, end);
 			printf("\n");
 		}
-	}else
+	} else
 		printf("\n");
 }
