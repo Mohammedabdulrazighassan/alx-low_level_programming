@@ -1,6 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/* LIBRARIES */
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+
 /**
  * struct listint_s - singly linked list
  *
